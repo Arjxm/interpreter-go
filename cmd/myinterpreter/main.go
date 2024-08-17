@@ -34,8 +34,12 @@ func main() {
 		for _, c := range fileContents {
 			if c == '(' {
 				fmt.Println("LEFT_PAREN ( null")
-			} else {
+			} else if c == ')' {
 				fmt.Println("RIGHT_PAREN ) null")
+			} else if c == '{' {
+				fmt.Println("LEFT_BRACE { null")
+			} else {
+				fmt.Println("RIGHT_BRACE } null")
 			}
 		}
 		fmt.Println("EOF  null")
